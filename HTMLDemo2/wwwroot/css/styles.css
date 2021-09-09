@@ -1,0 +1,47 @@
+﻿/* Selector: Searches for elements that match the description */
+
+/* First type: By Class. Starts with a . dot.*/
+.BigText {
+    color: green;
+    font-family: sans-serif;
+}
+
+.BigText {
+    font-weight: normal;
+}
+
+/* Second type of selector: By tag. No dot before it. */
+h2 {
+    color: blue;
+}
+
+/* Third type (rarely used): By ID. Has a # before it. */
+#CityHeader {
+    font-size: 1em;
+}
+
+/* Higher specificity. More specific. */
+h2.Black {
+    color: black;
+}
+
+/* Search for elements inside another element. */
+
+.MyBox {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: aquamarine;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    width: 300px;
+}
+
+.MyBox h1 {
+    color: #004000;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.BoldRed {
+    font-weight: bold;
+    color: red;
+}

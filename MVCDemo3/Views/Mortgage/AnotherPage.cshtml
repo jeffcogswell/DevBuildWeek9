@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "AnotherPage";
+}
+
+<h1>AnotherPage</h1>
+
+<h2>Here's an H2 tag</h2>
+Hello world!!!
+<br />
+
+@ViewData["Name"]
+<br />
+Our course is called @ViewData["Course"]
+<br />
+@(5 + 10)
+
+<br />
+The amount is @ViewData["Amount"] with interest rate @ViewData["Interest"]
+
+<br />
+<h2>The People:</h2>
+
+@{
+    foreach (string person in ViewData["ThePeople"] as List<string>)
+    {
+        <div class="MyPerson">@person</div>
+    }
+}

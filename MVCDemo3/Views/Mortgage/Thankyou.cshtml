@@ -1,0 +1,11 @@
+﻿@model Customer
+<!-- The model line above SPECIFIES THE TYPE of the object in the Model variable -->
+@{
+    ViewData["Title"] = "Thankyou";
+}
+
+<!-- We could have done this but it's annoying. So we made a Cust variable instead -->
+<h1>Thank you @Model.FirstName @Model.LastName for your registration!</h1>
+
+Password is @Model.Password .
+

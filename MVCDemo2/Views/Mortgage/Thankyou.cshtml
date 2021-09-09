@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Thankyou";
+    Customer Cust = ViewData["Customer"] as Customer;
+}
+
+<!-- We could have done this but it's annoying. So we made a Cust variable instead -->
+<h1>Thank you @((ViewData["Customer"] as Customer).FirstName)
+    @Cust.LastName for your registration!</h1>
+
+Password is @Cust.Password .....!!!!!!!

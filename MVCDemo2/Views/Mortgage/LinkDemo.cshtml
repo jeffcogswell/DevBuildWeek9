@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Link Demo Page";
+}
+
+
+
+<h1>LinkDemo</h1>
+
+Please <a href="/Mortgage/SignupForm">sign up</a>.
+<br /><br />
+
+<!-- HTML Helper ActionLink -- older style helpers-->
+@Html.ActionLink("Sign up", "SignupForm")
+
+<br /><br />
+
+<!-- Tag Helper -- newer style helpers -->
+<a asp-action="SignupForm">Another Link</a>
